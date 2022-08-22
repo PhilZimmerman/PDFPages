@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 [Setup]
-SignTool=MsSign $f
-SignedUninstaller=yes
+; SignTool=MsSign $f
+; SignedUninstaller=yes
 AppName=PDF Pages
-AppVersion=1.0.3
+AppVersion=1.0.4
 UninstallDisplayName=PDF Pages
 UninstallDisplaySize=192364544
 DefaultDirName={commonpf}\PDF Pages
@@ -22,7 +22,7 @@ Compression=lzma
 AppId={{F44D8949-C82A-4E7B-B3EE-A1D7C078D979}
 
 [Files]
-Source: "..\bin\Release\net5.0-windows\publish\*"; DestDir: "{app}"; Flags: recursesubdirs
+Source: "..\bin\Release\net7.0-windows\publish\*"; DestDir: "{app}"; Flags: recursesubdirs
 
 [Registry]
 Root: "HKCR"; Subkey: "SystemFileAssociations\.pdf\shell\Split PDF"; ValueType: string; ValueName: "MultiSelectModel"; ValueData: "Single"; Flags: deletekey uninsdeletekey
