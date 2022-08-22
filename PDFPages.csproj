@@ -2,11 +2,11 @@
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net5.0-windows</TargetFramework>
+		<TargetFramework>net7.0-windows</TargetFramework>
 		<UseWPF>true</UseWPF>
 		<ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
-		<Version>1.0.3</Version>
-		<AssemblyVersion>1.0.3.0</AssemblyVersion>
+		<Version>1.0.4</Version>
+		<AssemblyVersion>1.0.4.0</AssemblyVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
